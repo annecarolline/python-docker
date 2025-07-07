@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: alura-devops-app
+    ports:
+      - "8000:8000" # Mapeia a porta 8000 do host para a 8000 do container
+    volumes:
+      - .:/app # Monta o código local para live-reloading
